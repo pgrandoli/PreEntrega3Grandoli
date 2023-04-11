@@ -1,211 +1,115 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.button {
+  background: #2bff00;
+  color: #444;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.button:hover {
+  background: #444;
+  color: #2bff00;
+  transition: all 0.3s ease-in-out;
 }
 
-body{
-    font-family: 'consolas', sans-serif;
-    background: #444;
-    color: #2bff00;
+.carousel-item {
+  padding: 25px;
+  height: 50vh;
 }
 
-h1{
-    display: flex;
-    font-size: 40px;
-    margin-top: 40px;
-    margin-left: 20px;
-    font-weight: 600;
-    background: #444;
-    justify-content: left;
-    gap: 2px;
+.footer {
+  background: #444;
+  color: #2bff00;
+  text-align: right;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0px -15px 10px -10px #2bff00;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.footer .container .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background: #444;
+  color: #2bff00;
+}
+.header h1 {
+  display: flex;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 20px;
+  font-weight: 600;
+  justify-content: left;
+  gap: 2px;
+}
+.header h1:after {
+  content: "";
+  width: 5px;
+  height: 30px;
+  background: #2bff00;
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(2) infinite;
 }
 
 @keyframes cursor-blink {
-    0% {
-      opacity: 0;
-    }
-}
-
-h1:after {
-    content: "";
-    width: 5px;
-    height: 30px;
-    background: #2bff00;
-    display: inline-block;
-    animation: cursor-blink 1.5s steps(2) infinite;
+  0% {
+    opacity: 0;
   }
-
-
-.navbar{
-    display: flex;
-    justify-content: end;
-    box-shadow: 0px 10px 10px 0px #2bff00;
-    transition: box-shadow 0.3s ease-in-out;
-    background: #333;
-    
+}
+.navbar {
+  display: flex;
+  justify-content: end;
+  box-shadow: 0px 10px 10px 0px #2bff00;
+  transition: box-shadow 0.3s ease-in-out;
+  background: #444;
+}
+.navbar .navbar-toggler {
+  background: #2bff00;
+  border-radius: 0;
+  color: #444;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.navbar .navbar-toggler:hover {
+  background: #444;
+  color: #2bff00;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .nav-link {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2bff00;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .nav-link:hover {
+  background: #2bff00;
+  color: #444;
+  transition: all 0.3s ease-in-out;
 }
 
-.navbar-toggler{
-    background: #2bff00;
-    border-radius: 0;
-    color: #444;
-    margin: 10px;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav-link{
-    display: flex;
-    justify-content: end;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #2bff00;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+body {
+  font-family: "consolas", sans-serif;
 }
 
-.carousel-item{
-    padding: 25px;
-    height: 50vh;
-
-}
- 
-/* ul{
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px;
-}
-
-.navbar .fa-bars{
-    display: none;
-    font-size: 32px;
-    padding: 10px;
-    
-} */
-
-a{
-    text-decoration: none;
-    color: #2bff00;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-a:hover{
-    background: #2bff00;
-    color: #444;
-    transition: all 0.3s ease-in-out;
-}
-
-
-footer{
-    background: #333;
-    color: #2bff00;
-    text-align: right;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    box-shadow: 0px -15px 10px -10px #2bff00;
-    transition: box-shadow 0.3s ease-in-out;
-    }
-
-footer .container .social-icons{
-    display: flex;
-    justify-content: center;
-}
-
-
-.boton{
-    background: #2bff00;
-    color: #444;
-    margin: 10px;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-}
-
-.boton:hover{
-    background: #444;
-    color: #2bff00;
-    transition: all 0.3s ease-in-out;
-}
-
-.card{
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover{
-    box-shadow: 0px 0px 10px 0px #2bff00;
-    transition: box-shadow 0.3s ease-in-out;
-    transform:scale(1.02);
-    transition: transform 0.3s ease-in-out;
-}
-
-.consola{
-    background: #222;
-    color: #2bff00;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-}
-
-samp{
-    font-size: 15px;
-    font-weight: 500;
-    color: white;
-    
-}
-
-/* @media(max-width: 540px) {
-
-
-    .navBar .fa-bars{
-        display: block;
-        
-    }
-
-    .navBar .fa-bars:hover + ul{
-        right: 0;
-        color: #444;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .navbar ul:hover{
-        right: 0;
-    }
-
-    .navBar ul{
-        top:0;
-        right: -350px;
-        position: fixed;
-        background-color: #333;
-        width: 200px;
-        height: 100vh;
-        z-index: 5;
-        flex-direction: column;
-        justify-content: start;
-        align-items: flex-start;
-        
-    }
-
-} */
-
-@media(max-width: 444px) {
-    h1{
-        font-size: 30px;
-    }
-}
+/*# sourceMappingURL=style.css.map */
